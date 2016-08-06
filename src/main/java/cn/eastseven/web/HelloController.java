@@ -49,4 +49,9 @@ public class HelloController {
         SecurityContextHolder.clearContext();
         return "login";
     }
+
+    @GetMapping("/403")
+    public String error403() {
+        return "403";
+    }
 }
